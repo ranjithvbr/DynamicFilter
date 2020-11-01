@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* table */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 90%;
+  max-width: 1440px;
+  margin: 5% auto;
+}
+
+/* filter box */
+
+.filterContainer{
+  border: 1px solid #dddddd;
+  margin: 10px 0 35px 0;
+  padding: 10px;
+  width: 70%;
+}
+
+.filterdiv{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.filterdiv div{
+  padding: 1%;
+  width: 70%;
+}
+
+.filterdiv div input{
+  padding: 1%;
+  height: 24px;
+  width: 100%;
+}
+
+.filterdiv div select{
+  padding: 1%;
+  height: 30px;
+  width: 100%;
+}
+
+.filterWhere{
+  width: 30% !important;
+}
+
+.addFilter{
+  width: 100px;
+  height: 30px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.addFilter:hover,.reload:hover{
+  background-color: #dddddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reload{
+  border: 1px solid rgb(170, 170, 170);
+  width: 60px;
+  height: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.reloadBack{
+  border: 1px solid white !important;
+}
+
+.clrTic{
+  color: green;
+  font-weight: 600;
+}
+
+.clrCross{
+  color: red;
+  font-weight: 600;
 }
